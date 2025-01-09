@@ -84,8 +84,62 @@
             </div>
          </div>
       </div>
+      <div class="flex justify-center mx-auto text-primary font-bold text-2xl">About Us</div>
+      <div class="flex flex-col space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-10 mt-10">
+        <!-- Mission Section -->
+        <div class="flex flex-col items-center justify-center shadow-lg p-4">
+            <div><img src="/public/assets/mission.png" class="w-12" alt="Mission Icon"></div>
+            <div class="font-semibold mt-4">Our Mission</div>
+            <div class="text-center mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque ipsam, quisquam sequi ipsum ex vero officiis quis. Similique inventore illum perspiciatis facere quas tenetur voluptas!</div>
+        </div>
+
+        <!-- Vision Section -->
+        <div class="flex flex-col items-center justify-center shadow-lg p-4">
+            <div><img src="/public/assets/vision.png" class="w-12" alt="Vision Icon"></div>
+            <div class="font-semibold mt-4">Our Vision</div>
+            <div class="text-center mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus alias voluptates, corporis reiciendis dolor, voluptate enim nemo temporibus cum harum ratione unde!</div>
+        </div>
+
+        <!-- Why Us Section -->
+        <div class="flex flex-col items-center justify-center shadow-lg p-4">
+            <div><img src="/public/assets/why-us.png" class="w-12" alt="Why Choose Us Icon"></div>
+            <div class="font-semibold mt-4">Why Choose Us</div>
+            <div class="text-center mt-2">Real-Time Tracking: Stay updated on your deliveries from start to finish. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eos natus corporis esse consectetur voluptates est!</div>
+        </div>
+        </div>
 
 
+         <!-- partner  -->
+
+         <div>
+            <div>Partner With Us</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nobis deserunt officia tempora dignissimos cum accusantium? Dolore, eum fugiat perferendis, id consequatur ipsam praesentium animi quidem impedit magnam molestiae placeat?</div>
+            <div>Contact us today to explore partnership opportunuties:</div>
+            <div>Email:info@fingersnap.ng</div>
+            <div>Phone:08060414454</div>
+         </div>
+
+         <!-- stay tuned -->
+         <div>
+            <div>Stay Tuned</div>
+            <div>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, iure hic, nobis laborum, voluptates beatae corporis eius ipsum explicabo quis labore?
+            </div>
+            <div>Follow us on [social media links] to stay updated.</div>
+         </div> 
+
+         <!-- bottom  -->
+         <div class="bg-primary p-16 border rounded-[25px] mt-10">
+            <div>
+                <div>
+                    <img src="/public/assets/footer-logo.png" alt="">
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div></div>
+         </div>
       <main>
         <slot />
       </main>

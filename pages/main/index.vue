@@ -50,9 +50,9 @@
   
         <!-- Sign Up and Login Buttons -->
         <div class="hidden md:flex space-x-3">
-          <NuxtLink to="/signup" class="bg-white-600 text-dark border-primary px-6 py-2 rounded-md">Partner with us</NuxtLink>
-          <NuxtLink to="/signup" class="bg-white-600 text-primary border-primary px-10 py-2 border border-primary rounded-md">Login </NuxtLink>
-          <NuxtLink to="/login" class="bg-primary px-10 py-2 rounded-md  text-white font-bold">Sign up</NuxtLink>
+          <NuxtLink to="/signup" class="block bg-white-600 text-dark border-primary px-6 py-2 rounded-md">Partner with us</NuxtLink>
+          <NuxtLink to="/signup" class="block bg-white-600 text-primary border-primary px-10 py-2 border border-primary rounded-md">Login </NuxtLink>
+          <NuxtLink to="/login" class="block bg-primary px-10 py-2 rounded-md  text-white font-bold">Sign up</NuxtLink>
         </div>
 
         <div class="md:hidden">

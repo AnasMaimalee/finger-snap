@@ -89,21 +89,21 @@
       <div class="flex justify-center mx-auto text-primary font-bold text-2xl mt-10">About Us</div>
       <div class="flex flex-col space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-10 mt-10">
         <!-- Mission Section -->
-        <div class="flex flex-col items-center justify-center shadow-lg p-4">
+        <div class="flex flex-col items-center justify-center shadow-lg p-4 why">
           <div><img src="/public/assets/mission.png" class="w-12" alt="Mission Icon"></div>
           <div class="font-semibold mt-4">Our Mission</div>
           <div class="text-center mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque ipsam, quisquam sequi ipsum ex vero officiis quis.</div>
         </div>
 
         <!-- Vision Section -->
-        <div class="flex flex-col items-center justify-center shadow-lg p-4">
+        <div class="flex flex-col items-center justify-center shadow-lg p-4 why">
           <div><img src="/public/assets/vision.png" class="w-12" alt="Vision Icon"></div>
           <div class="font-semibold mt-4">Our Vision</div>
           <div class="text-center mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus alias voluptates, corporis reiciendis dolor, voluptate enim.</div>
         </div>
 
         <!-- Why Us Section -->
-        <div class="flex flex-col items-center justify-center shadow-lg p-4">
+        <div class="flex flex-col items-center justify-center shadow-lg p-4 why">
           <div><img src="/public/assets/why-us.png" class="w-12" alt="Why Choose Us Icon"></div>
           <div class="font-semibold mt-4">Why Choose Us</div>
           <div class="text-center mt-2">Real-Time Tracking: Stay updated on your deliveries from start to finish. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
@@ -133,16 +133,55 @@
       </div>
       <div>Follow us on [social media links] to stay updated.</div>
    </div> 
-
-    <!-- Footer -->
-    <div class="container bg-primary p-16 border rounded-[25px] mt-10 z-50">
-      <div>
-        <img src="/public/assets/footer-logo.png" alt="Footer Logo" />
-      </div>
-      <div></div>
-      <div></div>
-      <div></div>
+<div class="mb-24"></div>
+<!-- Footer -->
+<!-- Footer -->
+<div class="container bg-primary p-16 border rounded-[25px] mt-10 z-50">
+  <div class="flex flex-wrap justify-between p-10">
+    <!-- First Part: Image -->
+    <div class="flex flex-col items-center mb-6 sm:mb-0">
+      <img src="/public/assets/footer-logo.png" alt="Footer Logo" class="mb-4 w-60 hidden lg:block" />
     </div>
+
+    <!-- Second Part: About Us -->
+    <div class="flex flex-col sm:items-start items-center mb-6 sm:mb-0 sm:w-1/4">
+      <ul class="text-white font-bold text-sm space-y-2">
+        <li><a href="#">About Us</a></li>
+        <li>Airtime a</li>
+        <li>Cable Subscriptions</li>
+        <li>NECO Pin</li>
+      </ul>  
+    </div>
+
+    <!-- Third Part: Our Services -->
+    <div class="flex flex-col sm:items-start items-center mb-6 sm:mb-0 sm:w-1/4">
+      <ul class="text-white font-bold text-sm space-y-2">
+        <li>Data Plans</li>
+        <li>Airtime Recharge</li>
+        <li>Cable Subscriptions</li>
+      </ul>
+    </div>
+
+    <!-- Fourth Part: Partners & Vendors -->
+    <div class="flex flex-col sm:items-start items-center sm:w-1/4 w-full">
+      <h3 class="text-white font-semibold text-lg mb-2">Maiduguri Rd. Nassarawa <br> GRA, Kano State Nigeria</h3> <br>
+      <ul class="text-white text-sm space-y-2">
+        <li>Company X</li>
+        <li>Company Y</li>
+        <li>Company Z</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Additional Info Section -->
+  <div class="text-center mt-10 text-white text-sm">
+    <p>© 2025 Your Company Name. All rights reserved.</p>
+    <p>Privacy Policy | Terms of Service</p>
+  </div>
+</div>
+
+
+
   </div>
 </template>
 
@@ -193,7 +232,9 @@ html, body {
   max-width: 1400px; /* Limits the width of content */
   text-align: justify;
 }
-
+.why {
+  box-shadow: 0 0 10px #e4e1e1;
+}
 img {
   max-width: 100%; /* Prevents images from overflowing */
   height: auto; /* Maintains aspect ratio */

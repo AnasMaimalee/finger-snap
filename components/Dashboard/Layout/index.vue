@@ -11,7 +11,7 @@
           :alt="appName" />
 
         <!-- Desktop Navigation -->
-        <nav class="hidden sm:flex justify-center flex-1">
+        <nav class="hidden lg:flex justify-center flex-1">
           <ul class="flex list-none space-x-6 items-center">
             <li><nuxt-link href="#services" class="font-bold">About Us</nuxt-link></li>
             <li><nuxt-link href="#why-us" class="font-bold">Our Service</nuxt-link></li>
@@ -20,7 +20,7 @@
         </nav>
 
         <!-- Right side buttons (Log in / Sign Up) -->
-        <div class="hidden sm:flex space-x-4">
+        <div class="hidden lg:flex space-x-4">
           <ul class="flex list-none space-x-6 items-center">
             <li><nuxt-link href="#contact" class="font-bold">Partner with us</nuxt-link></li>
             <li><nuxt-link href="/" class="bg-brand border border-primary rounded-md px-4 py-2 font-bold text-primary shadow-sm transition">
@@ -33,7 +33,7 @@
         </div>
 
         <!-- Mobile Hamburger Icon -->
-        <button class="sm:hidden text-gray-800" @click="toggleMenu">
+        <button class="lg:hidden text-gray-800" @click="toggleMenu">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
           </svg>
@@ -42,7 +42,7 @@
     </header>
 
     <!-- Mobile Navigation (Initially Hidden) -->
-    <div :class="{'block': menuOpen, 'hidden': !menuOpen}" class="sm:hidden bg-white shadow-lg">
+    <div :class="{'block': menuOpen, 'hidden': !menuOpen}" class="lg:hidden bg-white shadow-lg">
       <ul class="flex flex-col items-end space-y-6 py-4 me-4">
         <li><nuxt-link href="#services" class="font-bold">About Us</nuxt-link></li>
         <li><nuxt-link href="#why-us" class="font-bold">Our Service</nuxt-link></li>
@@ -60,7 +60,30 @@
         </li>
       </ul>
     </div>
+    <!-- main -->
+    <div class="container">
+         <div class="flex justify-center items-center">
+            <div>
+                <div class="bg-[url('/public/assets/bg-three.png')] bg-no-repeat bg-bottom bg-cover text-primary text-[10px] font-bold pasted-service">
+                   The Most Pasted Delivery Service
+                </div>
 
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sequi architecto commodi reiciendis porro neque eius molestiae praesentium dolor ab!
+                </div>
+
+                <div class="spaxe-x-3 mt-10">
+                    <NuxtLink to="/signup" class="bg-white-600 text-primary border-primary px-10 py-2 border border-primary rounded-md" >Login </NuxtLink>
+                    <NuxtLink to="/signup" class="bg-white-600 bg-white text-primary border-primary px-10 py-2 border border-primary rounded-md me-4">Login </NuxtLink>
+                    <NuxtLink to="/login" class="bg-primary px-10 py-2 rounded-md  text-white font-bold ">Partner with us</NuxtLink>
+                </div>
+
+            </div>
+            <div>
+                <img src="/public/assets/large-image.png" class="w-[720px]" alt="">
+            </div>
+         </div>
+      </div>
     <!-- About Section -->
     <div class="container">
       <div class="flex justify-center mx-auto text-primary font-bold text-2xl mt-10">About Us</div>

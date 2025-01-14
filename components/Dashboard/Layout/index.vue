@@ -1,126 +1,125 @@
 <template>
   <div>
     <!-- Navbar -->
-    <header class="fixed z-50 w-full mt-5">
+    <header class="z-50 w-full mt-5">
       <div class="container mx-auto flex items-center justify-between px-4 py-4 sm:px-6">
+        <!-- Logo on the left -->
         <img
           :preview="false"
           style="width: 150px; height: 35px"
           src="/public/assets/logo.png"
           :alt="appName" />
-        <nav>
-          <button
-            class="block text-gray-800 sm:hidden"
-            @click="toggleMenu">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
-          </button>
-          <ul
-            class="list-none space-x-4 sm:flex items-center"
-            :class="{ hidden: !menuOpen, block: menuOpen, 'absolute left-0 top-16 w-full bg-gray-200': menuOpen }">
-            <li class="py-2 sm:static sm:py-0">
-              <nuxt-link
-                href="#services"
-                class="block font-bold"
-                >About Us</nuxt-link
-              >
-            </li>
-            <li class="py-2 sm:static sm:py-0">
-              <nuxt-link
-                href="#why-us"
-                class="block font-bold "
-                >Our Service</nuxt-link
-              >
-            </li>
-            <li class="py-2 sm:static sm:py-0">
-              <nuxt-link
-                href="#contact"
-                class="block font-bold"
-                >PartnerShip</nuxt-link
-              >
-            </li>
 
-
-            <li class="py-2 sm:static sm:py-0">
-              <nuxt-link
-                href="#contact"
-                class="block font-bold"
-                >Partner with us</nuxt-link
-              >
-            </li>
-            <li class="sm:grid md:flex py-2 sm:static sm:py-0 space-x-5 ">
-              <nuxt-link
-                href="/"
-                class="bg-brand border border-primary rounded-md px-4 py-2 font-bold text-primary shadow-sm transition ">
-                Log In
-              </nuxt-link>
-              <nuxt-link
-                href="/"
-                class="bg-primary rounded-md px-4 py-2 font-bold text-white  shadow-sm transition ">
-                Sign Up
-              </nuxt-link>
-            </li>
+        <!-- Desktop Navigation -->
+        <nav class="hidden sm:flex justify-center flex-1">
+          <ul class="flex list-none space-x-6 items-center">
+            <li><nuxt-link href="#services" class="font-bold">About Us</nuxt-link></li>
+            <li><nuxt-link href="#why-us" class="font-bold">Our Service</nuxt-link></li>
+            <li><nuxt-link href="#contact" class="font-bold">PartnerShip</nuxt-link></li>
           </ul>
         </nav>
+
+        <!-- Right side buttons (Log in / Sign Up) -->
+        <div class="hidden sm:flex space-x-4">
+          <ul class="flex list-none space-x-6 items-center">
+            <li><nuxt-link href="#contact" class="font-bold">Partner with us</nuxt-link></li>
+            <li><nuxt-link href="/" class="bg-brand border border-primary rounded-md px-4 py-2 font-bold text-primary shadow-sm transition">
+            Log In
+          </nuxt-link></li>
+          <li><nuxt-link href="/" class="bg-primary rounded-md px-4 py-2 font-bold text-white shadow-sm transition">
+            Sign Up
+          </nuxt-link></li>
+          </ul>
+        </div>
+
+        <!-- Mobile Hamburger Icon -->
+        <button class="sm:hidden text-gray-800" @click="toggleMenu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+          </svg>
+        </button>
       </div>
     </header>
 
-   
+    <!-- Mobile Navigation (Initially Hidden) -->
+    <div :class="{'block': menuOpen, 'hidden': !menuOpen}" class="sm:hidden bg-white shadow-lg">
+      <ul class="flex flex-col items-end space-y-6 py-4 me-4">
+        <li><nuxt-link href="#services" class="font-bold">About Us</nuxt-link></li>
+        <li><nuxt-link href="#why-us" class="font-bold">Our Service</nuxt-link></li>
+        <li><nuxt-link href="#contact" class="font-bold">PartnerShip</nuxt-link></li>
+        <li><nuxt-link href="#contact" class="font-bold">Partner with us</nuxt-link></li>
+        <li>
+          <nuxt-link href="/" class="bg-brand border border-primary rounded-md px-4 py-2 font-bold text-primary shadow-sm transition">
+            Log In
+          </nuxt-link>
+        </li>
+        <li>
+          <nuxt-link href="/" class="bg-primary rounded-md px-4 py-2 font-bold text-white shadow-sm transition">
+            Sign Up
+          </nuxt-link>
+        </li>
+      </ul>
+    </div>
 
-    <!-- Why Us Section -->
-    <section
-      id="why-us"
-      class="bg-white py-20">
-      <div class="container mx-auto text-center">
-        <h3 class="mb-8 text-3xl font-bold">Why Choose Us</h3>
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
-          <div
-            v-for="(about, index) in aboutUs"
-            :key="index"
-            class="flex items-center space-x-4">
-            <div>
-              <img
-                :src="about.icon"
-                alt="reason-icon"
-                class="h-12 w-12" />
-            </div>
-            <div>
-              <h4 class="text-xl font-bold">{{ about.title }}</h4>
-              <p class="text-gray-600">{{ about.description }}</p>
-            </div>
-          </div>
+    <!-- About Section -->
+    <div class="container">
+      <div class="flex justify-center mx-auto text-primary font-bold text-2xl mt-10">About Us</div>
+      <div class="flex flex-col space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-10 mt-10">
+        <!-- Mission Section -->
+        <div class="flex flex-col items-center justify-center shadow-lg p-4">
+          <div><img src="/public/assets/mission.png" class="w-12" alt="Mission Icon"></div>
+          <div class="font-semibold mt-4">Our Mission</div>
+          <div class="text-center mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque ipsam, quisquam sequi ipsum ex vero officiis quis.</div>
+        </div>
+
+        <!-- Vision Section -->
+        <div class="flex flex-col items-center justify-center shadow-lg p-4">
+          <div><img src="/public/assets/vision.png" class="w-12" alt="Vision Icon"></div>
+          <div class="font-semibold mt-4">Our Vision</div>
+          <div class="text-center mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus alias voluptates, corporis reiciendis dolor, voluptate enim.</div>
+        </div>
+
+        <!-- Why Us Section -->
+        <div class="flex flex-col items-center justify-center shadow-lg p-4">
+          <div><img src="/public/assets/why-us.png" class="w-12" alt="Why Choose Us Icon"></div>
+          <div class="font-semibold mt-4">Why Choose Us</div>
+          <div class="text-center mt-2">Real-Time Tracking: Stay updated on your deliveries from start to finish. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
         </div>
       </div>
-    </section>
+    </div>
+
+    <!-- Partner Section -->
+    <div class="container justify-center items-center text-center py-10">
+      <div class="text-primary font-bold text-2xl mb-4 mt-24">Partner With Us</div>
+      <div class="max-w-7xl mx-auto px-4 text-center"> <!-- Apply text-justify here -->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nobis deserunt officia tempora dignissimos cum accusantium? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae veniam a qui? Esse iusto eum praesentium perspiciatis obcaecati mollitia illum omnis doloremque, laborum fugit officia ullam in aut quasi tenetur! Dolore, eum fugiat perferendis, id consequatur ipsam praesentium animi quidem impedit magnam molestiae placeat?
+      </div>
+      <div class="text-lg mt-4">
+        <div class="text-gray-600 font-bold">Contact Us Today to explore partnership opportunities:</div>
+        <div>Email: info@fingersnap.ng</div>
+        <div>Phone: 08060414454</div>
+      </div>
+    </div>
+
+
+   <!-- Stay Tuned Section -->
+   <div class="container  justify-center items-center text-center py-10">
+      <div class="text-primary font-bold text-2xl mb-4 mt-24">Stay Tuned</div>
+      <div class="max-w-2xl mx-auto text-center px-4 mb-4">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, iure hic, nobis laborum, voluptates beatae corporis eius ipsum explicabo quis labore?
+      </div>
+      <div>Follow us on [social media links] to stay updated.</div>
+   </div> 
 
     <!-- Footer -->
-    <footer class="bg-gray-900 px-4 py-6 text-white sm:px-6">
-      <div class="container mx-auto text-center">
-        <p>&copy; {{ new Date().getFullYear() }} {{ appName }}. All rights reserved.</p>
-        <div class="mt-4 flex justify-center gap-4">
-          <nuxt-link
-            href="/register"
-            class="hover:underline"
-            >Register</nuxt-link
-          >
-          <nuxt-link
-            href="/login"
-            class="hover:underline"
-            >Login</nuxt-link
-          >
-        </div>
+    <div class="container bg-primary p-16 border rounded-[25px] mt-10 z-50">
+      <div>
+        <img src="/public/assets/footer-logo.png" alt="Footer Logo" />
       </div>
-    </footer>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   </div>
 </template>
 
@@ -129,84 +128,16 @@ import { ref, computed } from 'vue';
 import { useRuntimeConfig } from '#app';
 
 const menuOpen = ref(false);
-const toggleMenu = () => (menuOpen.value = !menuOpen.value);
+const toggleMenu = () => {
+  menuOpen.value = !menuOpen.value;
+};
 
 const config = useRuntimeConfig().public;
 const appName = computed(() => config.APP_NAME);
 const appDesc = computed(() => config.APP_DESC);
 const brandPrimaryColor = computed(() => config.BRAND_PRIMARY_COLOR);
 
-
-const services = [
-  {
-    name: 'Data',
-    icon: 'https://static.thenounproject.com/png/1639307-200.png',
-    description: 'Buy affordable mobile data plans.',
-  },
-  {
-    name: 'Airtime',
-    icon: 'https://static.thenounproject.com/png/42525-200.png',
-    description: 'Recharge your mobile instantly.',
-  },
-  {
-    name: 'Cable Subscriptions',
-    icon: 'https://static.thenounproject.com/png/3764360-200.png',
-    description: 'Pay for your cable TV services.',
-  },
-  {
-    name: 'Electricity Units',
-    icon: 'https://static.thenounproject.com/png/2460224-200.png',
-    description: 'Purchase electricity tokens effortlessly.',
-  },
-  {
-    name: 'WAEC Pin',
-    icon: 'https://static.thenounproject.com/png/3669378-200.png',
-    description: 'Get your WAEC scratch cards.',
-  },
-  {
-    name: 'NECO Pin',
-    icon: 'https://static.thenounproject.com/png/1946415-200.png',
-    description: 'Buy NECO scratch cards.',
-  },
-  {
-    name: 'NIN Verifications',
-    icon: 'https://static.thenounproject.com/png/1609967-200.png',
-    description: 'Verify your NIN with ease.',
-  },
-  {
-    name: 'BVN Verifications',
-    icon: 'https://static.thenounproject.com/png/1654505-200.png',
-    description: 'Secure BVN verification services.',
-  },
-  {
-    name: "JAMB O'Level Upload",
-    icon: 'https://static.thenounproject.com/png/1812879-200.png',
-    description: "Easily upload your O'Level results.",
-  },
-  {
-    name: 'JAMB Admission Letters',
-    icon: 'https://static.thenounproject.com/png/2834262-200.png',
-    description: 'Get your JAMB admission letters.',
-  },
-  {
-    name: 'NIN Verifications',
-    icon: 'https://static.thenounproject.com/png/2834264-200.png',
-    description: 'Verify your NIN with ease.',
-  },
-  {
-    name: 'BVN Verifications',
-    icon: 'https://static.thenounproject.com/png/2834266-200.png',
-    description: 'Secure BVN verification services.',
-  },
-  {
-    name: 'Newspaper Change of Name',
-    icon: 'https://static.thenounproject.com/png/2834268-200.png',
-    description: 'Easily process newspaper name changes.',
-  },
-];
-
 const aboutUs = [
-  
   {
     icon: 'https://static.thenounproject.com/png/3377066-200.png',
     title: 'Affordable Prices',
@@ -216,8 +147,7 @@ const aboutUs = [
 </script>
 
 <style scoped>
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Prevent horizontal scrolling */
@@ -231,9 +161,14 @@ body {
 }
 
 .container {
-  max-width: 1200px; /* Limits the width of content */
+  max-width: 1400px; /* Limits the width of content */
   margin: 0 auto; /* Centers the content */
   padding: 0 16px; /* Adds padding to avoid content touching edges */
+}
+
+.c-conatiner {
+  max-width: 1400px; /* Limits the width of content */
+  text-align: justify;
 }
 
 img {
@@ -243,5 +178,25 @@ img {
 
 .hero h1 {
   word-wrap: break-word; /* Ensures long text wraps properly */
+}
+
+.text-justify {
+  text-align: justify;
+  line-height: 1.6; /* Optional: For better line spacing */
+}
+
+/* For mobile navigation transitions */
+@media (max-width: 640px) {
+  .sm\\:hidden {
+    display: block;
+  }
+
+  .sm\\:flex {
+    display: none;
+  }
+
+  .sm\\:space-x-6 {
+    display: none;
+  }
 }
 </style>

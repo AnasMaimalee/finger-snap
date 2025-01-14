@@ -61,11 +61,11 @@
       </header>
 
       <!-- main -->
-      <div class="bg-[url('/public/assets/background-image.png')] bg-cover bg-center lg:mx-[50px]">
+      <div class="">
          <div class="flex justify-center items-center">
             <div>
-                <div class="bg-[url('/public/assets/bg-three.png')] bg-no-repeat bg-bottom bg-cover text-primary text-[10px] font-bold">
-                    <img src="/public/assets/the-most-food.png" alt="">
+                <div class="bg-[url('/public/assets/bg-three.png')] bg-no-repeat bg-bottom bg-cover text-primary text-[10px] font-bold pasted-service">
+                   The Most Pasted Delivery Service
                 </div>
 
                 <div>
@@ -146,4 +146,12 @@
     </div>
   </template>
  
-  
+<style>
+.pasted-service {
+    font-size: 70px;
+    background-image: url("/public/assets/background-image.png");
+    background-position-x: left;
+    background-size: 350px;
+    background-repeat: no-repeat;
+}
+</style>

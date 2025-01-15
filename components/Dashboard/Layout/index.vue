@@ -62,28 +62,28 @@
     </div>
     <!-- main -->
     <div class="container">
-         <div class="flex justify-center items-center">
+         <div class="flex justify-center lg:items-center first-section">
             <div>
                 <div class="bg-[url('/public/assets/bg-three.png')] bg-no-repeat bg-bottom bg-cover text-primary text-[10px] font-bold pasted-service">
                    The Most Pasted Delivery Service
                 </div>
 
-                <div>
+                <div class="">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sequi architecto commodi reiciendis porro neque eius molestiae praesentium dolor ab!
                 </div>
 
-                <div class="spaxe-x-3 mt-10">
-                    <NuxtLink to="/signup" class="bg-white-600 text-primary border-primary px-10 py-2 border border-primary rounded-md" >Login </NuxtLink>
-                    <NuxtLink to="/signup" class="bg-white-600 bg-white text-primary border-primary px-10 py-2 border border-primary rounded-md me-4">Login </NuxtLink>
-                    <NuxtLink to="/login" class="bg-primary px-10 py-2 rounded-md  text-white font-bold ">Partner with us</NuxtLink>
+                <div class="mt-10">
+                    <NuxtLink to="/signup" class="bg-white-600 text-primary border-primary px-10 py-2 border border-primary rounded-md " >Login </NuxtLink>
+                    <NuxtLink to="/signup" class="bg-white-600 bg-white text-primary border-primary px-10 py-2 border border-primary rounded-md" style="margin-left: -5px;">Login </NuxtLink>
+                    <NuxtLink to="/login" class="bg-primary px-10 py-2 rounded-md  text-white font-bold ms-4">Partner with us</NuxtLink>
                 </div>
 
             </div>
             <div>
-                <img src="/public/assets/large-image.png" class="w-[720px]" alt="">
+                <img src="/public/assets/large-image.png" class="w-[720px] bike-img" alt="">
             </div>
          </div>
-      </div>
+    </div>
     <!-- About Section -->
     <div class="container">
       <div class="flex justify-center mx-auto text-primary font-bold text-2xl mt-10">About Us</div>
@@ -140,25 +140,27 @@
   <div class="flex flex-wrap justify-between p-10">
     <!-- First Part: Image -->
     <div class="flex flex-col items-center mb-6 sm:mb-0">
-      <img src="/public/assets/footer-logo.png" alt="Footer Logo" class="mb-4 w-60 hidden lg:block" />
+      <img src="/public/assets/footer-logo.png" alt="Footer Logo" class="mb-4 w-60 hidden lg:block footer-image">
     </div>
 
     <!-- Second Part: About Us -->
     <div class="flex flex-col sm:items-start items-center mb-6 sm:mb-0 sm:w-1/4">
       <ul class="text-white font-bold text-sm space-y-2">
         <li><a href="#">About Us</a></li>
-        <li>Airtime a</li>
-        <li>Cable Subscriptions</li>
-        <li>NECO Pin</li>
+        <li>Our Service</li>
+        <li>Our Service</li>
+        <li>Our Service</li>
+
       </ul>  
     </div>
 
     <!-- Third Part: Our Services -->
     <div class="flex flex-col sm:items-start items-center mb-6 sm:mb-0 sm:w-1/4">
       <ul class="text-white font-bold text-sm space-y-2">
-        <li>Data Plans</li>
-        <li>Airtime Recharge</li>
-        <li>Cable Subscriptions</li>
+        <li>Our Service</li>
+        <li>Our Service</li>
+        <li>Our Service</li>
+
       </ul>
     </div>
 
@@ -171,12 +173,6 @@
         <li>Company Z</li>
       </ul>
     </div>
-  </div>
-
-  <!-- Additional Info Section -->
-  <div class="text-center mt-10 text-white text-sm">
-    <p>© 2025 Your Company Name. All rights reserved.</p>
-    <p>Privacy Policy | Terms of Service</p>
   </div>
 </div>
 
@@ -248,11 +244,45 @@ img {
   text-align: justify;
   line-height: 1.6; /* Optional: For better line spacing */
 }
+.pasted-service {
+    font-size: 70px;
+    background-image: url("/public/assets/bg-three.png");
+    background-position-x: left;
+    background-size: 280px;
+    background-repeat: no-repeat;
+}
+.first-section {
+  background-image: url("/public/assets/background-image.png"), url("/public/assets/second-bg.png");
+  background-position: center, top center;  /* First image covers the whole div, second image centered at the top */
+  background-repeat: no-repeat;            /* No repetition for both images */
+  background-size: cover, 20%;            /* First image covers the whole div, second image at 30% of its original size */
+  min-height: 500px;
+  margin-top:30px                       /* Ensure there's enough height to see the images */
+}
 
+.footer-image {
+  max-width:250px;
+  margin-right: 70px;
+
+  margin-top: 40px;
+}
 /* For mobile navigation transitions */
 @media (max-width: 640px) {
   .sm\\:hidden {
     display: block;
+  }
+  .pasted-service {
+    font-size: 45px;
+    background-image: url("/public/assets/bg-three.png");
+    background-position-x: left;
+    background-size: 280px;
+    background-repeat: no-repeat;
+}
+  /* Make the bike image larger on small screens */
+  .bike-img {
+    width: 60vw; /* This makes the image occupy 90% of the viewport width */
+    max-width: 1000px; /* Optional: Set a max width to avoid it becoming too large */
+    height: auto; /* Keep the aspect ratio intact */
   }
 
   .sm\\:flex {

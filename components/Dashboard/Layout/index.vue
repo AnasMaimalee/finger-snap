@@ -110,6 +110,74 @@
         </div>
       </div>
     </div>
+     <!-- what are  -->
+     <div class=" md:pb-10">
+      <div class="text-sm flex  justify-center items-center pt-10 pb-10 md:mt-0 md:text-2xl text-primary font-bold">
+          What Are They Saying About Us
+      </div>
+      <div class="container-what flex flex-col gap-10 sm:grid sm:grid-cols-1 md:grid-cols-3 justify-between space-y-6 sm:space-y-0 text-center md:mt-14 md:mx-20">
+    <div>
+        <div class="p-5 block rounded-lg shadow-lg">
+            <div class="text-gray-600">
+                <p class="mt-4 text-sm">
+                    Neque cupiditate assumenda in maiores repudi mollitia architecto. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laudantium tempore eius magni hic doloribus iure dignissimos, quae dolor impedit praesentium quidem architecto pariatur autem nam dicta repellendus veritatis harum.
+                </p>
+            </div>
+            <div class="my-10 mx-auto w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
+                <img src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" />
+            </div>
+            <hr class="" />
+            <div class="text-sm pt-2">
+                <div class="font-semibold">Aminu Abdullahi</div>
+                <div class="mt-2 text-gray-600 text-xs text-primary italic">
+                    CEO, Digital Butterfly
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="p-5 block rounded-lg shadow-lg">
+            <div class="text-gray-600">
+                <p class="mt-4 text-sm">
+                    Neque cupiditate assumenda in maiores repudi mollitia architecto. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laudantium tempore eius magni hic doloribus iure dignissimos, quae dolor impedit praesentium quidem architecto pariatur autem nam dicta repellendus veritatis harum.
+                </p>
+            </div>
+            <div class="my-10 mx-auto w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
+                <img src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp" />
+            </div>
+            <hr class="" />
+            <div class="text-sm pt-2">
+                <div class="font-semibold">Aminu Abdullahi</div>
+                <div class="mt-2 text-xs text-primary italic">
+                    CEO, Digital Butterfly
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="p-5 block rounded-lg shadow-lg">
+            <div class="text-gray-600">
+                <p class="mt-4 text-sm">
+                    Neque cupiditate assumenda in maiores repudi mollitia architecto. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laudantium tempore eius magni hic doloribus iure dignissimos, quae dolor impedit praesentium quidem architecto pariatur autem nam dicta repellendus veritatis harum.
+                </p>
+            </div>
+            <div class="my-10 mx-auto w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
+                <img src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp" />
+            </div>
+            <hr class="" />
+            <div class="text-sm pt-2">
+                <div class="font-semibold">Aminu Abdullahi</div>
+                <div class="mt-2 text-xs text-primary italic">
+                    CEO, Digital Butterfly
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
 
     <!-- Partner Section -->
     <div class="container justify-center items-center text-center py-10">
@@ -136,43 +204,49 @@
 <div class="mb-24"></div>
 <!-- Footer -->
 <!-- Footer -->
-<div class="container bg-primary p-16 border rounded-[25px] mt-10 z-50">
-  <div class="flex flex-wrap justify-between p-10">
+<div class="hidden md:block bg-primary border rounded-[25px] mt-10 z-50 bottom-body">
+  <div class="flex flex-wrap justify-between">
     <!-- First Part: Image -->
-    <div class="flex flex-col items-center mb-6 sm:mb-0">
-      <img src="/public/assets/footer-logo.png" alt="Footer Logo" class="mb-4 w-60 hidden lg:block footer-image">
+    <div class="flex flex-col  mb-6 sm:mb-0">
+      <img src="/public/assets/footer-logo.png" alt="Footer Logo" class="w-60 hidden lg:block footer-image">
     </div>
 
     <!-- Second Part: About Us -->
-    <div class="flex flex-col sm:items-start items-center mb-6 sm:mb-0 sm:w-1/4">
-      <ul class="text-white font-bold text-sm space-y-2">
+    <div class="flex flex-col sm:items-start items-center mb-6 sm:mb-0 sm:w-1/4 ">
+      <ul class="text-white font-bold text-xl space-y-2">
         <li><a href="#">About Us</a></li>
-        <li>Our Service</li>
-        <li>Our Service</li>
-        <li>Our Service</li>
+        <li>Our Services</li>
+        <li>Partners</li>
+        <li>Vendors</li>
 
       </ul>  
     </div>
 
     <!-- Third Part: Our Services -->
     <div class="flex flex-col sm:items-start items-center mb-6 sm:mb-0 sm:w-1/4">
-      <ul class="text-white font-bold text-sm space-y-2">
-        <li>Our Service</li>
-        <li>Our Service</li>
-        <li>Our Service</li>
+      <ul class="text-white font-bold text-xl space-y-2">
+        <li>Partner With Us</li>
+        <li>Become a Vendor</li>
+        <li>Terms & Conditions</li>
 
       </ul>
     </div>
 
     <!-- Fourth Part: Partners & Vendors -->
-    <div class="flex flex-col sm:items-start items-center sm:w-1/4 w-full">
+    <div class="flex  flex-col sm:items-start items-center sm:w-1/4 w-full">
       <h3 class="text-white font-semibold text-lg mb-2">Maiduguri Rd. Nassarawa <br> GRA, Kano State Nigeria</h3> <br>
       <ul class="text-white text-sm space-y-2">
-        <li>Company X</li>
-        <li>Company Y</li>
-        <li>Company Z</li>
+        <li class="flex items-center spaxe-x-2">
+          <img src="/public/assets/phone.png" class="w-8" alt=""> <span class="text-xl">08060414454</span>
+        </li>
+        <li class="flex items-center space-x-2"> 
+          <img src="/public/assets/email.png" class="w-8" alt=""> <span class="text-xl">info@fingersnap.ng</span>
+        </li>
       </ul>
     </div>
+  </div>
+  <div class="flex justify-center ">
+    <img src="/public/assets/social-logo.png" class="bottom-image" alt="">
   </div>
 </div>
 
@@ -223,7 +297,12 @@ html, body {
   margin: 0 auto; /* Centers the content */
   padding: 0 16px; /* Adds padding to avoid content touching edges */
 }
+.container-what{
+  max-width: 1400px; /* Limits the width of content */
+  margin: 0 auto; /* Centers the content */
+  padding: 0 16px; /* Adds padding to avoid content touching edges */
 
+}
 .c-conatiner {
   max-width: 1400px; /* Limits the width of content */
   text-align: justify;
@@ -261,10 +340,17 @@ img {
 }
 
 .footer-image {
-  max-width:250px;
+  max-width:300px;
   margin-right: 70px;
 
-  margin-top: 40px;
+}
+.bottom-body{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding:50px
+}
+.bottom-image{
+  width:120px;
 }
 /* For mobile navigation transitions */
 @media (max-width: 640px) {

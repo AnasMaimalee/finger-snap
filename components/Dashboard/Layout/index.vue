@@ -117,7 +117,7 @@
       </div>
       <div class="container-what flex flex-col gap-10 sm:grid sm:grid-cols-1 md:grid-cols-3 justify-between space-y-6 sm:space-y-0 text-center md:mt-14 md:mx-20">
     <div>
-        <div class="p-5 block rounded-lg shadow-lg">
+        <div class="p-5 block rounded-lg why">
             <div class="text-gray-600">
                 <p class="mt-4 text-sm">
                     Neque cupiditate assumenda in maiores repudi mollitia architecto. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laudantium tempore eius magni hic doloribus iure dignissimos, quae dolor impedit praesentium quidem architecto pariatur autem nam dicta repellendus veritatis harum.
@@ -137,7 +137,7 @@
     </div>
 
     <div>
-        <div class="p-5 block rounded-lg shadow-lg">
+        <div class="p-5 block rounded-lg why">
             <div class="text-gray-600">
                 <p class="mt-4 text-sm">
                     Neque cupiditate assumenda in maiores repudi mollitia architecto. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laudantium tempore eius magni hic doloribus iure dignissimos, quae dolor impedit praesentium quidem architecto pariatur autem nam dicta repellendus veritatis harum.
@@ -157,7 +157,7 @@
     </div>
 
     <div>
-        <div class="p-5 block rounded-lg shadow-lg">
+        <div class="p-5 block rounded-lg why">
             <div class="text-gray-600">
                 <p class="mt-4 text-sm">
                     Neque cupiditate assumenda in maiores repudi mollitia architecto. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laudantium tempore eius magni hic doloribus iure dignissimos, quae dolor impedit praesentium quidem architecto pariatur autem nam dicta repellendus veritatis harum.

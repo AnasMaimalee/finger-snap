@@ -73,7 +73,7 @@
                   to local sellers, ensuring essential goods and services are just a few clicks away
                 </div>
 
-                <div class="mt-10">
+                <div class="mt-10 down-btns">
                     <NuxtLink to="/signup" class="bg-white-600 text-primary border-primary px-10 py-2 border border-primary rounded-md " >Login </NuxtLink>
                     <NuxtLink to="/signup" class="bg-white-600 bg-white text-primary border-primary px-10 py-2 border border-primary rounded-md" style="margin-left: -5px;">Login </NuxtLink>
                     <NuxtLink to="/login" class="bg-primary px-10 py-2 rounded-md  text-white font-bold ms-4">Partner with us</NuxtLink>
@@ -367,15 +367,15 @@ img {
   .pasted-service {
     font-size: 40px;
     background-image: url("/public/assets/bg-three.png");
-    background-position-x: left;
+    background-position-x: left ;
     background-size: 280px;
     background-repeat: no-repeat;
-    margin-left:60px;
+    margin-left:80px;
 }
 .innovative{
   width: 180%;
-  margin:5px 50px 0px 50px;
-  padding: 10px;
+  margin:5px 50px 0px 65px;
+  padding: 15px;
 }
   /* Make the bike image larger on small screens */
   .bike-img {
@@ -390,6 +390,11 @@ img {
 
   .sm\\:space-x-6 {
     display: none;
+  }
+  .down-btns{
+    margin-top:5px;
+    width: 150%;
+    margin-left:80px;
   }
 
 }

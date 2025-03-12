@@ -68,8 +68,9 @@
                    The Most Pasted Delivery Service
                 </div>
 
-                <div class="">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sequi architecto commodi reiciendis porro neque eius molestiae praesentium dolor ab!
+                <div class="text-xl w-2/3 mt-3">
+                  Our Innovative platform connects customers
+                  to local sellers, ensuring essential goods and services are just a few clicks away
                 </div>
 
                 <div class="mt-10">
@@ -92,21 +93,27 @@
         <div class="flex flex-col items-center justify-center shadow-lg p-4 why">
           <div><img src="/public/assets/mission.png" class="w-12" alt="Mission Icon"></div>
           <div class="font-semibold mt-4">Our Mission</div>
-          <div class="text-center mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque ipsam, quisquam sequi ipsum ex vero officiis quis.</div>
+          <div class="text-center mt-2">TO eliminate inefficiencies in delivery Service. By 
+            combining technology with smooth customer support, we aim to deliver unique
+            speed and reliability. Whether it's food, groceries, medications, or  package delivery, our platform is tailored to meet different customer needs.          </div>
         </div>
 
         <!-- Vision Section -->
         <div class="flex flex-col items-center justify-center shadow-lg p-4 why">
           <div><img src="/public/assets/vision.png" class="w-12" alt="Vision Icon"></div>
           <div class="font-semibold mt-4">Our Vision</div>
-          <div class="text-center mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus alias voluptates, corporis reiciendis dolor, voluptate enim.</div>
+          <div class="text-center mt-2">TO become the leading provider of unify delivery solutions by the end of 2025, setting a new standard for convenience in the north.</div>
         </div>
 
         <!-- Why Us Section -->
         <div class="flex flex-col items-center justify-center shadow-lg p-4 why">
           <div><img src="/public/assets/why-us.png" class="w-12" alt="Why Choose Us Icon"></div>
           <div class="font-semibold mt-4">Why Choose Us</div>
-          <div class="text-center mt-2">Real-Time Tracking: Stay updated on your deliveries from start to finish. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+          <div class="text-center mt-2">Real-Time Tracking: Stay updated on your deliveries from start to finis. 
+            <br>
+            User-Friendly Platform: easy navigation for effortless ordering. <br>
+            Diverse Offerings: From meals to packages, we have you covered.
+          </div>
         </div>
       </div>
     </div>

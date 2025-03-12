@@ -68,7 +68,7 @@
                    The Most Pasted Delivery Service
                 </div>
 
-                <div class="text-xl w-2/3 mt-3">
+                <div class="text-xl w-2/3 mt-3 innovative">
                   Our Innovative platform connects customers
                   to local sellers, ensuring essential goods and services are just a few clicks away
                 </div>
@@ -365,15 +365,21 @@ img {
     display: block;
   }
   .pasted-service {
-    font-size: 45px;
+    font-size: 40px;
     background-image: url("/public/assets/bg-three.png");
     background-position-x: left;
     background-size: 280px;
     background-repeat: no-repeat;
+    margin-left:60px;
+}
+.innovative{
+  width: 180%;
+  margin:5px 50px 0px 50px;
+  padding: 10px;
 }
   /* Make the bike image larger on small screens */
   .bike-img {
-    width: 60vw; /* This makes the image occupy 90% of the viewport width */
+    width: 70vw; /* This makes the image occupy 90% of the viewport width */
     max-width: 1000px; /* Optional: Set a max width to avoid it becoming too large */
     height: auto; /* Keep the aspect ratio intact */
   }
@@ -385,5 +391,6 @@ img {
   .sm\\:space-x-6 {
     display: none;
   }
+
 }
 </style>

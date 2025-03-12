@@ -85,6 +85,11 @@
             </div>
          </div>
     </div>
+    <div class="mt-10 small-btns">
+                    <NuxtLink to="/signup" class="bg-white-600 text-primary border-primary px-10 py-2 border border-primary rounded-md " >Login </NuxtLink>
+                    <NuxtLink to="/signup" class="bg-white-600 bg-white text-primary border-primary px-10 py-2 border border-primary rounded-md" style="margin-left: -5px;">Login </NuxtLink> <br>
+                    <NuxtLink to="/login" class="bg-primary px-10 py-2 rounded-md  text-white font-bold last">Partner with us</NuxtLink>
+                </div>
     <!-- About Section -->
     <div class="container">
       <div class="flex justify-center mx-auto text-primary font-bold text-2xl mt-10">About Us</div>
@@ -292,7 +297,9 @@ html, body {
   overflow-x: hidden; /* Prevent horizontal scrolling */
   box-sizing: border-box;
 }
-
+.down-btns{
+  display:none;
+}
 *,
 *:before,
 *:after {
@@ -391,11 +398,11 @@ img {
   .sm\\:space-x-6 {
     display: none;
   }
-  .down-btns{
-    margin-top:5px;
-    width: 150%;
-    margin-left:80px;
+  .small-btns{
+    margin-top: -40px;
   }
-
+  .last{
+    margin-top:15px
+  }
 }
 </style>

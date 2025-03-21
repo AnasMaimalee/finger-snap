@@ -13,7 +13,7 @@
         <!-- Desktop Navigation -->
         <nav class="hidden lg:flex justify-center flex-1">
           <ul class="flex list-none space-x-6 items-center">
-            <li><nuxt-link href="#services" class="font-bold">About Us</nuxt-link></li>
+            <li><nuxt-link href="#about-us" class="font-bold">About Us</nuxt-link></li>
             <li><nuxt-link href="#why-us" class="font-bold">Our Service</nuxt-link></li>
             <li><nuxt-link href="#contact" class="font-bold">PartnerShip</nuxt-link></li>
           </ul>
@@ -44,7 +44,7 @@
     <!-- Mobile Navigation (Initially Hidden) -->
     <div :class="{'block': menuOpen, 'hidden': !menuOpen}" class="lg:hidden bg-white shadow-lg">
       <ul class="flex flex-col items-end space-y-6 py-4 me-4">
-        <li><nuxt-link href="#services" class="font-bold">About Us</nuxt-link></li>
+        <li><nuxt-link href="#about-us" class="font-bold">About Us</nuxt-link></li>
         <li><nuxt-link href="#why-us" class="font-bold">Our Service</nuxt-link></li>
         <li><nuxt-link href="#contact" class="font-bold">PartnerShip</nuxt-link></li>
         <li><nuxt-link href="#contact" class="font-bold">Partner with us</nuxt-link></li>
@@ -74,9 +74,9 @@
                 </div>
 
                 <div class="mt-10 down-btns">
-                    <NuxtLink to="/signup" class="bg-white-600 text-primary border-primary px-10 py-2 border border-primary rounded-md " >Login </NuxtLink>
-                    <NuxtLink to="/signup" class="bg-white-600 bg-white text-primary border-primary px-10 py-2 border border-primary rounded-md" style="margin-left: -5px;">Login </NuxtLink>
-                    <NuxtLink to="/login" class="bg-primary px-10 py-2 rounded-md  text-white font-bold ms-4">Partner with us</NuxtLink>
+                    <NuxtLink to="#" class="bg-white-600 text-primary border-primary px-10 py-2 border border-primary rounded-md " >Login </NuxtLink>
+                    <NuxtLink to="#" class="bg-white-600 bg-white text-primary border-primary px-10 py-2 border border-primary rounded-md" style="margin-left: -5px;">Sign Up </NuxtLink>
+                    <NuxtLink to="#" class="bg-primary px-10 py-2 rounded-md  text-white font-bold ms-4">Partner with us</NuxtLink>
                 </div>
 
             </div>
@@ -92,7 +92,7 @@
                 </div>
     <!-- About Section -->
     <div class="container">
-      <div class="flex justify-center mx-auto text-primary font-bold text-2xl mt-10">About Us</div>
+      <div class="flex justify-center mx-auto text-primary font-bold text-2xl mt-10" id="about-us">About Us</div>
       <div class="flex flex-col space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-10 mt-10">
         <!-- Mission Section -->
         <div class="flex flex-col items-center justify-center shadow-lg p-4 why">
@@ -122,74 +122,100 @@
         </div>
       </div>
     </div>
+
+
+    <div class="container">
+  <div class="flex justify-center mx-auto text-primary font-bold text-2xl mt-10" id="our-services">Our Services</div>
+  <div class="flex flex-col space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-10 mt-10">
+    <!-- Reception Food Service -->
+    <div class="flex flex-col items-center justify-center shadow-lg p-4 services">
+      <div class="font-semibold mt-4">Reception Food</div>
+      <div class="text-center mt-2">We specialize in providing delicious and diverse food options for receptions. Whether it's for a small gathering or a large event, our food will make your celebration memorable.</div>
+    </div>
+
+    <!-- Wedding Food Service -->
+    <div class="flex flex-col items-center justify-center shadow-lg p-4 services">
+      <div class="font-semibold mt-4">Wedding Food</div>
+      <div class="text-center mt-2">Make your special day even more unforgettable with our wedding catering services. From elegant appetizers to exquisite main courses, we ensure every bite is perfect for your big day.</div>
+    </div>
+
+    <!-- Normal Food Delivery Service -->
+    <div class="flex flex-col items-center justify-center shadow-lg p-4 services">
+      <div class="font-semibold mt-4">Normal Food Delivery</div>
+      <div class="text-center mt-2">Get your favorite meals delivered quickly to your door. Whether you're craving a quick snack or a full meal, we offer convenient and fast delivery to satisfy your hunger anytime, anywhere.</div>
+    </div>
+  </div>
+</div>
+
+
      <!-- what are  -->
-     <div class=" md:pb-10">
+    <div class=" md:pb-10">
       <div class="text-sm flex  justify-center items-center pt-10 pb-10 md:mt-0 md:text-2xl text-primary font-bold">
           What Are They Saying About Us
       </div>
       <div class="container-what flex flex-col gap-10 sm:grid sm:grid-cols-1 md:grid-cols-3 justify-between space-y-6 sm:space-y-0 text-center md:mt-14 md:mx-20">
-    <div>
-        <div class="p-5 block rounded-lg why">
-            <div class="text-gray-600">
-                <p class="mt-4 text-sm">
-                    Neque cupiditate assumenda in maiores repudi mollitia architecto. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laudantium tempore eius magni hic doloribus iure dignissimos, quae dolor impedit praesentium quidem architecto pariatur autem nam dicta repellendus veritatis harum.
-                </p>
-            </div>
-            <div class="my-10 mx-auto w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
-                <img src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" />
-            </div>
-            <hr class="" />
-            <div class="text-sm pt-2">
-                <div class="font-semibold">Aminu Abdullahi</div>
-                <div class="mt-2 text-gray-600 text-xs text-primary italic">
-                    CEO, Digital Butterfly
+        <div>
+            <div class="p-5 block rounded-lg why">
+                <div class="text-gray-600">
+                    <p class="mt-4 text-sm">
+                        Neque cupiditate assumenda in maiores repudi mollitia architecto. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laudantium tempore eius magni hic doloribus iure dignissimos, quae dolor impedit praesentium quidem architecto pariatur autem nam dicta repellendus veritatis harum.
+                    </p>
+                </div>
+                <div class="my-10 mx-auto w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
+                    <img src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" />
+                </div>
+                <hr class="" />
+                <div class="text-sm pt-2">
+                    <div class="font-semibold">Aminu Abdullahi</div>
+                    <div class="mt-2 text-gray-600 text-xs text-primary italic">
+                        CEO, Digital Butterfly
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div>
-        <div class="p-5 block rounded-lg why">
-            <div class="text-gray-600">
-                <p class="mt-4 text-sm">
-                    Neque cupiditate assumenda in maiores repudi mollitia architecto. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laudantium tempore eius magni hic doloribus iure dignissimos, quae dolor impedit praesentium quidem architecto pariatur autem nam dicta repellendus veritatis harum.
-                </p>
-            </div>
-            <div class="my-10 mx-auto w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
-                <img src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp" />
-            </div>
-            <hr class="" />
-            <div class="text-sm pt-2">
-                <div class="font-semibold">Aminu Abdullahi</div>
-                <div class="mt-2 text-xs text-primary italic">
-                    CEO, Digital Butterfly
+        <div>
+            <div class="p-5 block rounded-lg why">
+                <div class="text-gray-600">
+                    <p class="mt-4 text-sm">
+                        Neque cupiditate assumenda in maiores repudi mollitia architecto. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laudantium tempore eius magni hic doloribus iure dignissimos, quae dolor impedit praesentium quidem architecto pariatur autem nam dicta repellendus veritatis harum.
+                    </p>
+                </div>
+                <div class="my-10 mx-auto w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
+                    <img src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp" />
+                </div>
+                <hr class="" />
+                <div class="text-sm pt-2">
+                    <div class="font-semibold">Aminu Abdullahi</div>
+                    <div class="mt-2 text-xs text-primary italic">
+                        CEO, Digital Butterfly
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div>
-        <div class="p-5 block rounded-lg why">
-            <div class="text-gray-600">
-                <p class="mt-4 text-sm">
-                    Neque cupiditate assumenda in maiores repudi mollitia architecto. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laudantium tempore eius magni hic doloribus iure dignissimos, quae dolor impedit praesentium quidem architecto pariatur autem nam dicta repellendus veritatis harum.
-                </p>
-            </div>
-            <div class="my-10 mx-auto w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
-                <img src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp" />
-            </div>
-            <hr class="" />
-            <div class="text-sm pt-2">
-                <div class="font-semibold">Aminu Abdullahi</div>
-                <div class="mt-2 text-xs text-primary italic">
-                    CEO, Digital Butterfly
+        <div>
+            <div class="p-5 block rounded-lg why">
+                <div class="text-gray-600">
+                    <p class="mt-4 text-sm">
+                        Neque cupiditate assumenda in maiores repudi mollitia architecto. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laudantium tempore eius magni hic doloribus iure dignissimos, quae dolor impedit praesentium quidem architecto pariatur autem nam dicta repellendus veritatis harum.
+                    </p>
+                </div>
+                <div class="my-10 mx-auto w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
+                    <img src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp" />
+                </div>
+                <hr class="" />
+                <div class="text-sm pt-2">
+                    <div class="font-semibold">Aminu Abdullahi</div>
+                    <div class="mt-2 text-xs text-primary italic">
+                        CEO, Digital Butterfly
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+      </div>
 
-</div>
+    </div>
 
     <!-- Partner Section -->
     <div class="container justify-center items-center text-center py-10">
@@ -297,7 +323,7 @@ html, body {
   overflow-x: hidden; /* Prevent horizontal scrolling */
   box-sizing: border-box;
 }
-.down-btns{
+.small-btns{
   display:none;
 }
 *,
@@ -380,7 +406,7 @@ img {
     margin-left:80px;
 }
 .innovative{
-  width: 180%;
+  width: 150%;
   margin:5px 50px 0px 65px;
   padding: 15px;
 }
@@ -400,6 +426,7 @@ img {
   }
   .small-btns{
     margin-top: -40px;
+    margin-right: 40px;
   }
   .last{
     margin-top:15px

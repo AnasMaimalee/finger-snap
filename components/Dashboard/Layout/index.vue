@@ -83,6 +83,9 @@
             <div>
                 <img src="/public/assets/large-image.png" class="w-[720px] bike-img" alt="">
             </div>
+            <div>
+                <img src="/public/assets/Pasted image.png" class="w-[720px] bike-sml-img" alt="">
+            </div>
          </div>
     </div>
     <div class="mt-10 small-btns">
@@ -123,29 +126,29 @@
       </div>
     </div>
 
-
+    <!-- our services -->
     <div class="container">
-  <div class="flex justify-center mx-auto text-primary font-bold text-2xl mt-10" id="our-services">Our Services</div>
-  <div class="flex flex-col space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-10 mt-10">
-    <!-- Reception Food Service -->
-    <div class="flex flex-col items-center justify-center shadow-lg p-4 services">
-      <div class="font-semibold mt-4">Reception Food</div>
-      <div class="text-center mt-2">We specialize in providing delicious and diverse food options for receptions. Whether it's for a small gathering or a large event, our food will make your celebration memorable.</div>
-    </div>
+      <div class="flex justify-center mx-auto text-primary font-bold text-2xl mt-10" id="our-services">Our Services</div>
+      <div class="flex flex-col space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-10 mt-10">
+        <!-- Reception Food Service -->
+        <div class="flex flex-col items-center justify-center shadow-lg p-4 services">
+          <div class="font-semibold mt-4">Reception Food</div>
+          <div class="text-center mt-2">We specialize in providing delicious and diverse food options for receptions. Whether it's for a small gathering or a large event, our food will make your celebration memorable.</div>
+        </div>
 
-    <!-- Wedding Food Service -->
-    <div class="flex flex-col items-center justify-center shadow-lg p-4 services">
-      <div class="font-semibold mt-4">Wedding Food</div>
-      <div class="text-center mt-2">Make your special day even more unforgettable with our wedding catering services. From elegant appetizers to exquisite main courses, we ensure every bite is perfect for your big day.</div>
-    </div>
+        <!-- Wedding Food Service -->
+        <div class="flex flex-col items-center justify-center shadow-lg p-4 services">
+          <div class="font-semibold mt-4">Wedding Food</div>
+          <div class="text-center mt-2">Make your special day even more unforgettable with our wedding catering services. From elegant appetizers to exquisite main courses, we ensure every bite is perfect for your big day.</div>
+        </div>
 
-    <!-- Normal Food Delivery Service -->
-    <div class="flex flex-col items-center justify-center shadow-lg p-4 services">
-      <div class="font-semibold mt-4">Normal Food Delivery</div>
-      <div class="text-center mt-2">Get your favorite meals delivered quickly to your door. Whether you're craving a quick snack or a full meal, we offer convenient and fast delivery to satisfy your hunger anytime, anywhere.</div>
+        <!-- Normal Food Delivery Service -->
+        <div class="flex flex-col items-center justify-center shadow-lg p-4 services">
+          <div class="font-semibold mt-4">Normal Food Delivery</div>
+          <div class="text-center mt-2">Get your favorite meals delivered quickly to your door. Whether you're craving a quick snack or a full meal, we offer convenient and fast delivery to satisfy your hunger anytime, anywhere.</div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
 
      <!-- what are  -->
@@ -337,6 +340,9 @@ html, body {
   margin: 0 auto; /* Centers the content */
   padding: 0 16px; /* Adds padding to avoid content touching edges */
 }
+.bike-sml-img{
+  display:none;
+}
 .container-what{
   max-width: 1400px; /* Limits the width of content */
   margin: 0 auto; /* Centers the content */
@@ -398,25 +404,23 @@ img {
     display: block;
   }
   .pasted-service {
-    font-size: 40px;
+    font-size: 33px;
     background-image: url("/public/assets/bg-three.png");
     background-position-x: left ;
-    background-size: 280px;
+    background-size: 180px;
     background-repeat: no-repeat;
-    margin-left:80px;
 }
 .innovative{
-  width: 150%;
-  margin:5px 50px 0px 65px;
+  width:;
   padding: 15px;
 }
-  /* Make the bike image larger on small screens */
   .bike-img {
-    width: 70vw; /* This makes the image occupy 90% of the viewport width */
-    max-width: 1000px; /* Optional: Set a max width to avoid it becoming too large */
-    height: auto; /* Keep the aspect ratio intact */
+   display:none;
   }
-
+  .bike-sml-img{
+  display:block;
+  width: 1450px;
+}
   .sm\\:flex {
     display: none;
   }

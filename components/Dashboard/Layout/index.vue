@@ -135,19 +135,19 @@
       <div class="flex justify-center mx-auto text-primary font-bold text-2xl mt-10" id="our-services">Our Services</div>
       <div class="flex flex-col space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-10 mt-10">
         <!-- Reception Food Service -->
-        <div class="flex flex-col items-center justify-center shadow-lg p-4 services">
+        <div class="flex flex-col items-center justify-center shadow-lg p-4 services why">
           <div class="font-semibold mt-4">Reception Food</div>
           <div class="text-center mt-2">We specialize in providing delicious and diverse food options for receptions. Whether it's for a small gathering or a large event, our food will make your celebration memorable.</div>
         </div>
 
         <!-- Wedding Food Service -->
-        <div class="flex flex-col items-center justify-center shadow-lg p-4 services">
+        <div class="flex flex-col items-center justify-center shadow-lg p-4 services why">
           <div class="font-semibold mt-4">Wedding Food</div>
           <div class="text-center mt-2">Make your special day even more unforgettable with our wedding catering services. From elegant appetizers to exquisite main courses, we ensure every bite is perfect for your big day.</div>
         </div>
 
         <!-- Normal Food Delivery Service -->
-        <div class="flex flex-col items-center justify-center shadow-lg p-4 services">
+        <div class="flex flex-col items-center justify-center shadow-lg p-4 services why">
           <div class="font-semibold mt-4">Normal Food Delivery</div>
           <div class="text-center mt-2">Get your favorite meals delivered quickly to your door. Whether you're craving a quick snack or a full meal, we offer convenient and fast delivery to satisfy your hunger anytime, anywhere.</div>
         </div>
@@ -155,80 +155,13 @@
     </div>
 
 
-     <!-- what are  -->
-    <div class=" md:pb-10">
-      <div class="text-sm flex  justify-center items-center pt-10 pb-10 md:mt-0 md:text-2xl text-primary font-bold">
-          What Are They Saying About Us
-      </div>
-      <div class="container-what flex flex-col gap-10 sm:grid sm:grid-cols-1 md:grid-cols-3 justify-between space-y-6 sm:space-y-0 text-center md:mt-14 md:mx-20">
-        <div>
-            <div class="p-5 block rounded-lg why">
-                <div class="text-gray-600">
-                    <p class="mt-4 text-sm">
-                        Neque cupiditate assumenda in maiores repudi mollitia architecto. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laudantium tempore eius magni hic doloribus iure dignissimos, quae dolor impedit praesentium quidem architecto pariatur autem nam dicta repellendus veritatis harum.
-                    </p>
-                </div>
-                <div class="my-10 mx-auto w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
-                    <img src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" />
-                </div>
-                <hr class="" />
-                <div class="text-sm pt-2">
-                    <div class="font-semibold">Aminu Abdullahi</div>
-                    <div class="mt-2 text-gray-600 text-xs text-primary italic">
-                        CEO, Digital Butterfly
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <div class="p-5 block rounded-lg why">
-                <div class="text-gray-600">
-                    <p class="mt-4 text-sm">
-                        Neque cupiditate assumenda in maiores repudi mollitia architecto. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laudantium tempore eius magni hic doloribus iure dignissimos, quae dolor impedit praesentium quidem architecto pariatur autem nam dicta repellendus veritatis harum.
-                    </p>
-                </div>
-                <div class="my-10 mx-auto w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
-                    <img src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp" />
-                </div>
-                <hr class="" />
-                <div class="text-sm pt-2">
-                    <div class="font-semibold">Aminu Abdullahi</div>
-                    <div class="mt-2 text-xs text-primary italic">
-                        CEO, Digital Butterfly
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <div class="p-5 block rounded-lg why">
-                <div class="text-gray-600">
-                    <p class="mt-4 text-sm">
-                        Neque cupiditate assumenda in maiores repudi mollitia architecto. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laudantium tempore eius magni hic doloribus iure dignissimos, quae dolor impedit praesentium quidem architecto pariatur autem nam dicta repellendus veritatis harum.
-                    </p>
-                </div>
-                <div class="my-10 mx-auto w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
-                    <img src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp" />
-                </div>
-                <hr class="" />
-                <div class="text-sm pt-2">
-                    <div class="font-semibold">Aminu Abdullahi</div>
-                    <div class="mt-2 text-xs text-primary italic">
-                        CEO, Digital Butterfly
-                    </div>
-                </div>
-            </div>
-        </div>
-      </div>
-
-    </div>
+  
 
     <!-- Partner Section -->
     <div class="container justify-center items-center text-center py-10">
       <div class="text-primary font-bold text-2xl mb-4 mt-24">Partner With Us</div>
       <div class="max-w-7xl mx-auto px-4 text-center"> <!-- Apply text-justify here -->
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nobis deserunt officia tempora dignissimos cum accusantium? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae veniam a qui? Esse iusto eum praesentium perspiciatis obcaecati mollitia illum omnis doloremque, laborum fugit officia ullam in aut quasi tenetur! Dolore, eum fugiat perferendis, id consequatur ipsam praesentium animi quidem impedit magnam molestiae placeat?
+        We're on the lookout for passionate vendors to join us in transforming the delivery business. Collaborative with FingerSnap Delivery to expand your customer base and grow your business effortelessly. Together, we can make essential services more accessible to thousands of customers.
       </div>
       <div class="text-lg mt-4">
         <div class="text-gray-600 font-bold">Contact Us Today to explore partnership opportunities:</div>
@@ -249,13 +182,13 @@
 <div class="mb-24"></div>
 <!-- Footer -->
 <!-- Footer -->
-<div class="hidden md:block bg-primary border rounded-[25px] mt-10 z-50 bottom-body">
+<div class="bg-primary border rounded-[25px] mt-10 z-50 bottom-body">
   <div class="flex flex-wrap justify-between">
     <!-- First Part: Image -->
     <div class="flex flex-col  mb-6 sm:mb-0">
-      <img src="/public/assets/footer-logo.png" alt="Footer Logo" class="w-60 hidden lg:block footer-image">
+      <img src="/public/assets/footer-logo.png" alt="Footer Logo" class="w-60  footer-image">
     </div>
-
+    
     <!-- Second Part: About Us -->
     <div class="flex flex-col sm:items-start items-center mb-6 sm:mb-0 sm:w-1/4 ">
       <ul class="text-white font-bold text-xl space-y-2">
@@ -292,6 +225,55 @@
   </div>
   <div class="flex justify-center ">
     <img src="/public/assets/social-logo.png" class="bottom-image" alt="">
+  </div>
+</div>
+
+
+<!-- footer small -->
+
+<div class="bg-primary py-10">
+  <div class="flex flex-wrap justify-between items-center mx-auto container">
+    <!-- Footer Logo and Navigation Links -->
+    <div class="flex items-center space-x-10"> 
+      <!-- Logo -->
+      <div>
+        <img src="/public/assets/small-bottom-logo.png" alt="Footer Logo" class="w-24" />
+      </div>
+      
+      <!-- Navigation Links -->
+      <div>
+        <ul class="text-white font-bold text-xl space-x-8 flex">
+          <li><a href="#" class="hover:text-accent">About Us</a></li>
+          <li><a href="#" class="hover:text-accent">Our Services</a></li>
+          <li><a href="#" class="hover:text-accent">Partners</a></li>
+          <li><a href="#" class="hover:text-accent">Vendors</a></li>
+        </ul>
+      </div>
+
+      <!-- Partner, Vendor, and Legal Links -->
+      <div>
+        <ul class="text-white font-bold text-xl space-x-8 flex">
+          <li><a href="#" class="hover:text-accent">Partner With Us</a></li>
+          <li><a href="#" class="hover:text-accent">Become a Vendor</a></li>
+          <li><a href="#" class="hover:text-accent">Terms & Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Information Section -->
+  <div class="mt-10 text-white text-center md:text-left container mx-auto flex flex-wrap justify-between">
+    <div>
+      <h3 class="text-lg font-semibold mb-2">Maiduguri Rd. Nassarawa <br> GRA, Kano State Nigeria</h3>
+      <div class="flex items-center space-x-2">
+        <img src="/public/assets/phone.png" class="w-8" alt="">
+        <span class="text-xl">08060414454</span>
+      </div>
+      <div class="flex items-center space-x-2 mt-2">
+        <img src="/public/assets/email.png" class="w-8" alt="">
+        <span class="text-xl">info@fingersnap.ng</span>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -396,6 +378,9 @@ img {
   margin-right: 70px;
 
 }
+.footer-img-sml{
+  display:none
+}
 .bottom-body{
   max-width: 1400px;
   margin: 0 auto;
@@ -403,6 +388,9 @@ img {
 }
 .bottom-image{
   width:120px;
+}
+.bottom-body-small{
+  display:none;
 }
 /* For mobile navigation transitions */
 @media (max-width: 640px) {
@@ -451,5 +439,19 @@ img {
   .small-btns .last{
     margin-top:15px
   }
+
+  .footer-image{
+    display:none;
+  }
+  .footer-img-sml{
+  display:block;
+  width:50px;
+}
+.bottom-body{
+  display:none;
+}
+.bottom-body-small{
+  display:block;
+}
 }
 </style>

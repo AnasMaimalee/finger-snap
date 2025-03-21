@@ -230,17 +230,14 @@
 
 
 <!-- footer small -->
-
+<!-- 
 <div class="bg-primary py-10">
   <div class="flex flex-wrap justify-between items-center mx-auto container">
-    <!-- Footer Logo and Navigation Links -->
     <div class="flex items-center space-x-10"> 
-      <!-- Logo -->
       <div>
         <img src="/public/assets/small-bottom-logo.png" alt="Footer Logo" class="w-24" />
       </div>
       
-      <!-- Navigation Links -->
       <div>
         <ul class="text-white font-bold text-xl space-x-8 flex">
           <li><a href="#" class="hover:text-accent">About Us</a></li>
@@ -250,7 +247,6 @@
         </ul>
       </div>
 
-      <!-- Partner, Vendor, and Legal Links -->
       <div>
         <ul class="text-white font-bold text-xl space-x-8 flex">
           <li><a href="#" class="hover:text-accent">Partner With Us</a></li>
@@ -261,7 +257,6 @@
     </div>
   </div>
 
-  <!-- Contact Information Section -->
   <div class="mt-10 text-white text-center md:text-left container mx-auto flex flex-wrap justify-between">
     <div>
       <h3 class="text-lg font-semibold mb-2">Maiduguri Rd. Nassarawa <br> GRA, Kano State Nigeria</h3>
@@ -275,7 +270,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 
 

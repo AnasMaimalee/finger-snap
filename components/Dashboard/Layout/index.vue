@@ -88,10 +88,14 @@
             </div>
          </div>
     </div>
+    <div class="text-xl w-2/3 mt-3 innovative-sml">
+                  Our Innovative platform connects customers
+                  to local sellers, ensuring essential goods and services are just a few clicks away
+                </div>
     <div class="mt-10 small-btns">
                     <NuxtLink to="/signup" class="bg-white-600 text-primary border-primary px-10 py-2 border border-primary rounded-md " >Login </NuxtLink>
-                    <NuxtLink to="/signup" class="bg-white-600 bg-white text-primary border-primary px-10 py-2 border border-primary rounded-md" style="margin-left: -5px;">Login </NuxtLink> <br>
-                    <NuxtLink to="/login" class="bg-primary px-10 py-2 rounded-md  text-white font-bold last">Partner with us</NuxtLink>
+                    <NuxtLink to="/signup" class="bg-white-600 bg-white text-primary border-primary px-10 py-2 border border-primary rounded-md" style="margin-left: -5px;">Login </NuxtLink> <br> <br>
+                    <NuxtLink to="/login" class="bg-primary px-10 py-2 rounded-md  text-white font-bold last" style="margin-top:20px;">Partner with us</NuxtLink>
                 </div>
     <!-- About Section -->
     <div class="container">
@@ -334,7 +338,9 @@ html, body {
 *:after {
   box-sizing: inherit; /* Ensures all elements respect box-sizing */
 }
-
+.innovative-sml{
+  display:none;
+}
 .container {
   max-width: 1400px; /* Limits the width of content */
   margin: 0 auto; /* Centers the content */
@@ -411,8 +417,13 @@ img {
     background-repeat: no-repeat;
 }
 .innovative{
-  width:;
-  padding: 15px;
+  display:none;
+}
+.innovative-sml{
+  display:block;
+  width:100%;
+  margin-top: -230px;
+  padding:10px;
 }
   .bike-img {
    display:none;
@@ -420,6 +431,7 @@ img {
   .bike-sml-img{
   display:block;
   width: 1450px;
+  margin-top:-25px;
 }
   .sm\\:flex {
     display: none;
@@ -428,11 +440,16 @@ img {
   .sm\\:space-x-6 {
     display: none;
   }
+  .down-btns{
+    display:none;
+  }
   .small-btns{
-    margin-top: -40px;
+    display:block;
+    margin-top: 5px;
+    padding:10px;
     margin-right: 40px;
   }
-  .last{
+  .small-btns .last{
     margin-top:15px
   }
 }

@@ -410,7 +410,7 @@ img {
     display: block;
   }
   .pasted-service {
-    font-size: 33px;
+    font-size: 43px;
     background-image: url("/public/assets/bg-three.png");
     background-position-x: left ;
     background-size: 180px;
@@ -422,7 +422,7 @@ img {
 .innovative-sml{
   display:block;
   width:100%;
-  margin-top: -230px;
+  margin-top: -170px;
   padding:10px;
 }
   .bike-img {
@@ -430,8 +430,7 @@ img {
   }
   .bike-sml-img{
   display:block;
-  width: 1450px;
-  margin-top:-25px;
+  width: 700px;
 }
   .sm\\:flex {
     display: none;
